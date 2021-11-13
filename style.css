@@ -1,0 +1,807 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+a:hover {
+color: #ffffff;
+}
+body {
+  background-color: #e6e6e6;
+}
+
+header {
+position: relative;
+}
+#logo-adjust {
+padding-left: 10em;
+position: absolute;
+top: 0;
+left: 0;
+padding-top: 3em;
+max-width: 25%;
+height: auto;
+}
+/* NavBar */
+ul {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 9em;
+  padding-top: 3em;
+}
+
+li {
+    float: right;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .animation:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #0884bc;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .animation:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* Fontes */
+  @font-face{
+    font-family:GoldplayBold;
+    src: url(assets/fonts/Goldplay_Bold.otf);
+  }
+  @font-face{
+    font-family:GoldplayRegular;
+    src: url(assets/fonts/Goldplay_Regular.otf);
+  }
+  @font-face{
+    font-family:Museo700;
+    src: url(assets/fonts/museo-700.otf);
+  }
+  input {
+    font-family: GoldplayBold;
+  }
+/* Sessões */
+#sobre1 {
+color: #e6e6e6;
+background-color: #222127;
+padding: 10px 0 10px;
+text-align: justify;
+}
+#sobre1 h1 {
+  margin: 8%;
+  text-align: center;
+  font-family: Museo700;
+}
+.sobre2 {
+background-color: #0884bc;
+}
+.sobre2 p {
+color: #e6e6e6;
+font-family: GoldplayRegular;
+font-size: 20px;
+padding-top: 40px;
+}
+.sobre2 img {
+max-width: 60%;
+height: auto;
+padding-top: 30%;
+}
+#sobre3 {
+  background-color: #e6e6e6;
+  padding: 10px 0 10px;
+}
+#sobre3 p {
+  color: #4d4d4d;;
+  margin: 8%;
+  font-size: 30px;
+  font-family: GoldplayRegular;
+}
+#sobre4 {
+  background: rgb(34,33,39);
+  background: linear-gradient(0deg, rgba(34,33,39,1) 70%, rgba(230,230,230,1) 70%);
+  text-align:center
+}
+#sobre4 img {
+  max-width: 70%;
+  height: auto;
+}
+#sobre5 {
+  background-color: #e6e6e6;
+  max-width: 950px;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px
+}
+#curso {
+  background-color: #222127;
+}
+#curso img {
+  padding-top: 20%;
+  padding-bottom: 80px;
+  margin-left: 13%;
+  
+}
+#sobre7 {
+background-color: #e6e6e6;
+}
+#sobre8 {
+background-color: #222127;
+}
+#sobre9 {
+background-image: url("assets/middle.png");
+min-height: 400px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#sobre9 img {
+max-width: 70%;
+height: auto;
+padding-top: 30%;
+}
+#sobre9 p {
+color: #e6e6e6;
+font-size: 20px;
+font-family: GoldplayRegular;
+}
+#sobre10 {
+background-color: #e6e6e6;
+}
+#sobre10 img {
+max-width: 70%;
+height: auto;
+padding: 15% 0 15%;
+}
+#valores {
+background-color: #222127;
+color: #ffffff;
+}
+#sobre12 {
+text-align: start;
+font-size: 1.5rem;
+padding: 7% 0 15%;
+}
+#sobre12 p {
+font-family: GoldplayRegular;
+color: #666666;
+}
+
+
+
+
+
+
+
+
+
+/* Classes */
+.caixa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub {
+  background-color: #0086be;
+  border: none;
+  color: white;
+  padding: 20px 54px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 27px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 900;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sub2 {
+  background-color: #0086be;
+  border: none;
+  color: white;
+  padding: 20px 54px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 27px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sub:hover {
+  background: #079ddb;
+  text-decoration: none;
+}
+.sub2:hover {
+  background: #079ddb;
+  text-decoration: none;
+}
+.caixa-dois {
+  padding: 70px 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.avatar {
+  margin: 4%;
+  width: 27%;
+  height: 100%;
+}
+.avt-txt {
+    padding-bottom: 35px;
+    font-size: 40px;
+    color: #0086be;
+    font-family: Museo700;
+}
+.avt-title {
+    font-size: 30px;
+    font-family: Museo700;
+    color: #666666;
+    font-weight: lighter;
+}
+.avt-txt-desc {
+  font-size: 19px;
+  font-family: GoldplayRegular;
+  color: #4d4d4d;
+  text-align: justify;
+  text-justify: auto;
+  width: 500px;
+}
+.p1 {
+  font-size: 40px;
+  color: #666666;
+  text-align: start;
+  font-family: Museo700;
+  line-height: 90%;
+  margin-left: 6%;
+}
+
+.normalized-img {
+  max-width: 10%;
+  height: auto;
+}
+.desc {
+  width: 350px;
+  color: #ffffff;
+  font-size: 50px;
+  margin-left: 13%;
+  line-height: 90%;
+  font-family: Museo700;
+}
+.desc1 {
+  color: #222127;
+  width: 180px;
+  font-size: 40px;
+  font-family: Museo700;
+  line-height: 90%;
+}
+.underline2 {
+  color: #0086be;
+  font-size: 40px;
+}
+.underline3 {
+   padding-top: 15%;
+  margin-left: 13%;
+  color: #0086be;
+  font-size: 40px;
+}
+.underline4 {
+ padding-top: 12%;
+ color: #0086be;
+ font-size: 50px;
+}
+.desc-dois {
+  color: #cccccc;
+  font-size: 20px;
+  font-family: GoldplayRegular;
+  width: 500px;
+  text-align: justify;
+  padding-bottom: 150px;
+}
+.desc-dois2 {
+color: #cccccc;
+font-size: 20px;
+font-family: GoldplayRegular;
+width: 500px;
+text-align: justify;
+padding-bottom: 500px;
+}
+.desc-tres {
+color: #999999;
+font-size: 20px;
+font-family: Museo700;
+text-align: center;
+width: 400%;
+padding-bottom: 30%;
+}
+.caixa-tres {
+  display: flex;
+  flex-direction: row;
+}
+.caixa-tres3 {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.underline {
+margin-left: 13%;
+color: #0086be;
+font-size: 40px;
+}
+.btnlive {
+background-color:#990000;
+height: 90px;
+width: 500px;
+border-radius: 10px;
+color: white;
+font-size: 60px;
+font-family: GoldplayRegular;
+margin-top: -30%;
+margin-left: 15%;
+border-color: transparent;
+}
+.desc-seis {
+max-width: 40%;
+color: #ffffff;
+font-size: 20px;
+margin-left: 13%;
+font-family: PlutoExtraLight;
+}
+.desc-quatro {
+
+color: #ffffff;
+font-size: 35px;
+margin-left: 13%;
+padding-bottom: 60%;
+font-family: Museo700;
+line-height: 95%;
+}
+.desc-cinco {
+color: #e6e6e6;
+font-size: 20px;
+font-family: PlutoExtraLight;
+width: 500px;
+text-align: start;
+padding-bottom: 150px;
+}
+.conteudoprogramatico {
+color:#c3c3c3;
+font-family: GoldplayRegular;
+font-size: 20px;
+}
+.caixa-cinco {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+.valores {
+font-size: 40px;
+color: #ffffff;
+font-family: Museo700;
+}
+.valordocurso {
+font-size: 20px;
+font-family: GoldplayRegular;
+color: #e6e6e6;
+}
+.azul {
+color: #0086be;
+}
+.formasdepagamento {
+font-size: 20px;
+font-family: GoldplayRegular;
+color: #e6e6e6;
+}
+.valordoinvestimento {
+font-size: 40px;
+font-family: Museo700;
+}
+.pequeno {
+font-size: 20px;
+}
+.oitenta {
+max-width: 80%;
+margin: auto;
+}
+.oitenta2 {
+max-width: 95%;
+margin: auto;
+padding-bottom: 7%;
+}
+.oitenta3 {
+max-width: 80%;
+margin:0;
+}
+.image-adjust {
+max-width: 260px;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 50px;
+}
+#list div {
+margin-top: 10px;
+font-size: 20px;
+} 
+.colors {
+color: #ffffff;
+font-size: 20px;
+font-family: Museo700;
+width: 500px;
+text-align: start;
+padding-bottom: 150px;
+}
+.colors2 {
+color: #ffffff;
+font-family: PlutoExtraLight;
+width: 500px;
+text-align: start;
+}
+.row {
+display: flex;
+}
+.column {
+flex: 50%;
+}
+.hotmart {
+max-width: 80%;
+height: auto;
+}
+.encontro {
+  color: #222127;
+  font-size: 35px;
+  font-family: GoldplayRegular;
+  line-height: 90%;
+  text-align: center;
+  padding-top: 80px;
+  width: 768px;
+}
+.onlymobile {
+display: none;
+}
+footer {
+  background-image: url(assets/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 100px 0 100px 0;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+ }
+ .icons {
+  padding-right: 20px;
+}
+#column-mobile2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-adjust2 {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.image-adjust3 {
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/*Mobile Version*/
+@media (max-width: 768px) {
+  .aprenda-mobile {
+    padding: 20px 0 0px;
+    text-align: center;
+    margin: 5%;
+    font-family: Museo700;
+    color: #666666;
+    font-size: 1.3em;
+  }
+  .avatar-mobile {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding-top: 30px;
+  }
+  #professores-mobile {
+    padding-top: 20px;
+    text-align: center;
+    margin: 5%;
+    font-family: Museo700;
+    font-weight: lighter;
+    color: #666666;
+    font-size: 1.3em;
+  }
+  #professores-mobile::after {
+    width: 0px;
+    height: 0px;
+    background-color: currentColor;
+    display: none;
+  }
+  .onlymobile {
+    display: block;
+  }
+  .nsfmobile {
+    display: none;
+  }
+  .caixa-mobile {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+  .avatar-text-mobile {
+    font-size: 30px;
+    margin: 30px;
+    justify-content: unset;
+    color: #0086be;
+    font-family: Museo700;
+
+  }
+  .avatar-textpadding-mobile {
+    padding-left: 0%;
+  }
+  .avatar-description-mobile {
+    font-size: 17px;
+    margin: 30px;
+    justify-content: unset;
+    text-align:left;
+    font-family: GoldplayRegular;
+    color: #4d4d4d;
+    text-align: justify;
+  }
+  #column-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .caixa-tres {
+    display: flex;
+    flex-direction: column;
+  }
+  .desc-dois {
+    font-size: 17px;
+    margin: 30px;
+    justify-content: unset;
+    text-align:left;
+    font-family: GoldplayRegular;
+    text-align: justify;
+    width: auto;
+  }
+  .desc-dois2 {
+  margin: 30px;
+  justify-content: unset;
+  text-align:left;
+  text-align: justify;
+  width: auto;
+  }
+  .desc-tres {
+    margin: 30px;
+    justify-content: unset;
+    color: #999999;
+    font-size: 17px;
+    font-family: Museo700;
+    width: 700px;
+    text-align: start;
+    padding-left: 0;
+    width: auto;
+    padding-bottom: 30px;
+    }
+  .desc-quatro {
+    margin: 0;
+    padding-bottom: 10%;
+    font-size: 1.3em;
+  }
+  .underline3 {
+    margin: 0;
+  }
+  .desc {
+    margin: 0%;
+    margin: 30px;
+    font-size: 1.3em;
+  }
+  .desc-dois {
+    padding-bottom: 50px;
+    font-size: 17px;
+  }
+  .desc-dois2 {
+    padding-bottom: 150px;
+    font-size: 17px;
+  }
+  .underline {
+    margin: 0%;
+    margin: 30px;
+  }
+  .normalized-img {
+    max-width: 30%;
+  }
+  #curso img {
+    padding-top: 70px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+  .conteudoprogramatico {
+    font-size: 17px;
+    text-align: justify;
+    text-justify: auto;
+  }
+  .colors {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: Museo700;
+    width: auto;
+    text-align: start;
+  }
+  .sub2 {
+    font-size: 1.5em;
+    width: 3em;
+    margin: auto;
+  }
+  #list {
+    padding-bottom: 30%;
+  } 
+  .data {
+    max-width: 85%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+  }
+  .hotmart {
+    max-width: 50%;
+    height: auto;
+    padding: 0;
+    margin: auto;
+  }
+  .desc1 {
+    color: #222127;
+    width: 180px;
+    font-size: 1.3em;
+    font-family: Museo700;
+    line-height: 90%;
+    padding-bottom: 20;
+  }
+  .sub {
+    background-color: #0086be;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 900;
+    border-radius: 10em;
+    transition: 0.3s;
+    margin: 10% auto 10% auto;
+  }
+  #sobre1 h1 {
+    font-size: 1.3em;
+  }
+  #sobre1 p {
+    font-size: 1.3em;
+    margin: 8%;
+    text-align: center;
+    font-family: Museo700;
+  }
+  #sobre3 p {
+    color: #4d4d4d;;
+    margin: 8%;
+    font-size: 17px;
+    font-family: GoldplayRegular;
+  }
+  #sobre9 p {
+    color: #e6e6e6;
+    font-size: 17px;
+    font-family: GoldplayRegular;
+    padding-top: 10px;
+  }
+  .valordocurso {
+    font-size: 17px;
+    font-family: GoldplayRegular;
+    color: #e6e6e6;
+  }
+  .formasdepagamento {
+    font-size: 17px;
+    font-family: GoldplayRegular;
+    color: #e6e6e6;
+  }
+  .valordoinvestimento {
+    font-size: 17px;
+    font-family: Museo700;
+  }
+  .pequeno {
+    font-size: 15px;
+  }
+  #sobre12 p {
+    font-family: GoldplayRegular;
+    color: #666666;
+    font-size: 17px;
+  }
+  .sobre2 img {
+    max-width: 30%;
+    height: auto;
+    padding-top: 10%;
+    }
+  .sobre2 p {
+    color: #e6e6e6;
+    font-family: GoldplayRegular;
+    font-size: 17px;
+    padding-top: 5px;
+  }
+  #sobre9 img {
+    max-width: 30%;
+    height: auto;
+    padding-top: 0;
+  }
+  .padding-img {
+    margin-top: 30%;
+  }
+  .valores {
+    font-size: 1.3em;
+  }
+  .encontro {
+    width: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .btnlive {
+    background-color:#990000;
+    height: 90px;
+    width: 500px;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    font-family: GoldplayRegular;
+    margin-top: -30%;
+    margin-left: 8%;
+    border-color: transparent;
+  }
+}
+
