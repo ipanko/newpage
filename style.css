@@ -28,6 +28,14 @@ height: auto;
 }
 /* NavBar */
 ul {
+  /*sticky start*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*sticky end*/
+  /*correct over*/
+  z-index: 1;
+  /*end correct over*/
   list-style-type: none;
   margin: 0;
   padding: 0;
